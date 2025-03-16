@@ -1,0 +1,41 @@
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+    nav{
+        background-color: transparent;
+        height: auto;
+    }
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+        padding: 1rem;
+	}
+
+    main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 25px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        content: "";
+        clear: both;
+        height: 60px;
+        width: 90%;
+        font-size: 13pt;
+        margin: 20px auto;
+        background-color: #c2bfbf;
+    }
+}

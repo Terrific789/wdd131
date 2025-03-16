@@ -1,0 +1,150 @@
+:root {
+    --primary-color: grey;
+    --secondary-color: lightgray;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+    font-weight: 400;
+    height: 100vh;
+}
+
+header {
+	background-color: #bbb;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+#para{
+    font-size: 15pt;
+    padding-top: 5px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;  
+    text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
+    grid-column: 1/4;
+    font-weight: 100;
+    padding: 10%;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #132e56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav a {
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 13pt;
+    height: 100px;
+    width: 100%;
+}
+
+nav a:hover {
+	background-color: #eee;
+	color: #000;
+    height: 30px;
+}
+
+.active {
+	color: yellow;
+}
+
+
+#para {
+    font-size: 20pt;
+    padding-top: 5px;
+    color: #fff;
+    width: 15%;
+    font-family: 'Roboto', sans-serif;
+}
+
+main { 
+    width: 90%;
+    margin: 0 auto;
+    display:flex; 
+    flex-direction: column;
+    grid-gap: 25px;
+  }
+
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+figure:hover{
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+figure img{
+        width: 100%;
+        height: 250px;
+}   
+
+figcaption{
+    font-size: 15pt;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    clear: both;
+    height: 60px;
+    width: 100%;
+    font-size: 13pt;
+    margin: 10px auto;
+    background-color: #c2bfbf;
+}
