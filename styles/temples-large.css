@@ -1,3 +1,4 @@
+/* temple-large */
 @media (min-width: 740px) {
 	header {
 		display: flex;
@@ -29,6 +30,7 @@
 
     #hamburger{
         display: none;
+        /*  */
     }
 
 
@@ -38,18 +40,13 @@
         gap: 25px;
     }
 
-    footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
+    footer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
-        content: "";
-        clear: both;
         height: 60px;
-        width: 90%;
-        font-size: 13pt;
-        margin: 20px auto;
         background-color: #c2bfbf;
     }
+    
 }

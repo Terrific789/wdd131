@@ -1,3 +1,4 @@
+/* temple mobile */
 :root {
     --primary-color: grey;
     --secondary-color: lightgray;
@@ -73,7 +74,7 @@ nav a {
 	padding: 5px;
 	text-decoration: none;
 	font-size: 13pt;
-    height: 100px;
+    height: 50px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -96,7 +97,7 @@ nav img{
 }
 
 #mobile{
-    z-index: 999;
+    z-index: 1000;
     position: fixed;
     top: 0;
     right: 0;
@@ -110,13 +111,50 @@ nav img{
     padding: 20px;
 }
 
-/* #mobile a{
-    font: 20px;
-    width: 50%;
-    text-align: center;
-    height: 100px;
-    margin: 20px 20px 20px 20px;
-} */
+#mobile ul {
+    width: 100%;
+    padding: 0;
+}
+
+#mobile li {
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-width: 70%;
+}
+
+#mobile a {
+    display: block;
+    width: 70%;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    transition: background 0.6s, color 0.3s;
+}
+
+#mobile a:hover {
+    background-color: #f8c471; /* Light orange */
+    color: #000;
+    font-weight: bold;
+}
+
+#mobile li:first-child {
+    border-bottom: none;
+    mix-blend-mode: color-burn;
+    background-color: rgba(132, 124, 124, 0.6);
+    width: 60px;
+    height: 70px;
+}
+
+#menu-Bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 
 #mobile img{
     width: 60px;
@@ -180,18 +218,18 @@ figcaption{
     font-weight: 100;
 }
 
-  footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    content: "";
-    clear: both;
-    height: 60px;
+    text-align: center;
     width: 100%;
-    font-size: 13pt;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin: 10px auto;
+    height: auto;
+    padding: 10px;
     background-color: #c2bfbf;
+}
+
+footer p {
+    margin: 5px 0;
 }
