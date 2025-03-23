@@ -18,6 +18,20 @@
         padding: 1rem;
 	}
 
+    .hideOnMobile{
+        display: block;
+    }
+
+
+    #mobile{
+        display: none;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+
     main{
         display: grid;
         grid-template-columns: auto auto auto;

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="WDD 131 - Dynamic Web Fundamentals" keyword="Picture Album">
+    <meta author="Izunna Egba">
     <title>Picture Album</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,14 +13,15 @@
 
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts\temples.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
     
 </head>
 <body>
     <header>
-        <p id="para">Temple Album</p>
-        <nav>
+       <h1>Temple Album</h1>
+        <nav id="mobile">
             <ul>
+                <li onclick="hideNavbar()" id="menu-Bar"><img src="images/multiply.png" alt=""></li>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Sandbox</a></li>
                 <li><a href="#">References</a></li>
@@ -26,25 +29,35 @@
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
+        <nav>
+            <ul>
+                <li class="hideOnMobile"><a href="#" class="active">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Sandbox</a></li>
+                <li class="hideOnMobile"><a href="#">References</a></li>
+                <li class="hideOnMobile"><a href="#">Project</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile" id="hamburger" onclick="showNavbar()"><img src="images/bar.png" alt=""></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <h1>Temple Images</h1>
+        <h2>Temple Images</h2>
 
         <figure>
-            <img src="images\managua-nicaragua-temple-58316-main.jpg" alt="temple1">
+            <img src="images/managua-nicaragua-temple-58316-main.jpg" alt="temple1">
             <figcaption>temple1</figcaption>
         </figure>
         <figure>
-            <img src="images\image.jpeg" alt="temple1">
+            <img src="images/image.jpeg" alt="temple1">
             <figcaption>temple1</figcaption>
         </figure>
         <figure>
-            <img src="images\image1.jpeg" alt="temple1">
+            <img src="images/image1.jpeg" alt="temple1">
             <figcaption>temple1</figcaption>
         </figure>
         <figure>
-            <img src="images\image2.jpeg" alt="temple1">
+            <img src="images/image2.jpeg" alt="temple1">
             <figcaption>temple1</figcaption>
         </figure>
         <figure>
