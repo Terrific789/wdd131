@@ -16,13 +16,32 @@ document.getElementById("lastModified").innerHTML = `Last Modified: ${lastModifi
 // }
 
 
+const bar = document.querySelector('#hamburger');
+const multiply = document.querySelector('#menu-Bar');
+const sidebar = document.querySelector('#mobile');
 
-function showNavbar() {
-    const sidebar = document.querySelector('#mobile');
-    sidebar.style.display ="block";
-}
+bar.addEventListener('click', () => {
+    sidebar.style.display = "block";
+    multiply.style.display = "block";
+    bar.style.display = "none";
+});
 
-function hideNavbar() {
-    const hidebar = document.querySelector('#mobile');
-    hidebar.style.display ="none";
-}
+multiply.addEventListener('click', () => {
+    sidebar.style.display = "none";
+    multiply.style.display = "none";
+    bar.style.display = "block";
+});
+
+
+
+// function showNavbar() {
+//     const sidebar = document.querySelector('#mobile');
+//     sidebar.style.display ="block";
+// }
+
+// function hideNavbar() {
+//     const hidebar = document.querySelector('#mobile');
+//     hidebar.style.display ="none";
+//     bar.style.display ="none";
+
+// }
