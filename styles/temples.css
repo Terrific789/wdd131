@@ -31,7 +31,7 @@ main {
 }
 
 h1{
-    font-size: 100;
+    font-weight: 400;
     color: tan;
     font-family: 'Roboto', sans-serif;  
     text-align: center;
@@ -45,7 +45,6 @@ h2 {
     height: 70px;
     width: 100%;
     color: #fff;
-    font-weight: bolder;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -75,6 +74,8 @@ nav a {
 	font-size: 13pt;
     height: 100px;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 nav a:hover {
@@ -174,6 +175,8 @@ figcaption{
     color: #fff;
     width: 100%;
     border-radius: 0 0 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
   footer{
@@ -186,6 +189,8 @@ figcaption{
     height: 60px;
     width: 100%;
     font-size: 13pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     margin: 10px auto;
     background-color: #c2bfbf;
 }
