@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="keywords" content="Country, Places, Web Development, HTML, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Izunna Egba">
+    <title>Country</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css"> 
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <section>
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="Orem Utah Temple" width="100%" height="auto">
+            </picture>
+            
+            <div id="data">
+                <h2>Data</h2>
+                <div class="d1">
+                    <p><strong>Capital:</strong> Abuja</p>
+                    <p><strong>Population:</strong> Over 200 million</p>
+                    <p><strong>Area:</strong>23,768 km²</p>
+                    <p><strong>Language:</strong> 250 languages</p>
+                    <p><strong>Time zone:</strong> WAT+3</p>
+                    <p><strong>Currency:</strong> Naira</p>
+                    <p><strong>Calling code:</strong> +234</p>
+                    <p><strong>Internet TLD:</strong> .ng</p>
+                </div>
+            </div>
+
+            <div class="weather ">
+                <h3 class="after">Weather</h3>
+                <div class="d2"></div>
+                    <img src="images\1075473_cloud_sky_summer_sun_sunshine_icon.svg" alt="">
+                    <p><strong>Temperature:</strong> <span id="temp">10</span> ℃</p>
+                    <p><strong>Conditions:</strong> Sunny</p>
+                    <p><strong>Wind:</strong><span id="windSpeed">10</span>km/k</p>
+                    <p><strong>WindChill:</strong> <span id="windChill">Calculating...</span></p>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span>Izunna Egba | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
