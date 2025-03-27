@@ -36,6 +36,11 @@ picture{
     height: auto;
 }
 
+.responsive-img{
+    width: 100%;
+    height: auto;
+}
+
 #data, .weather{
     background-color: #fff9e3;
     margin: 5px auto;
