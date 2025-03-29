@@ -46,7 +46,7 @@ picture{
     margin: 5px auto;
     height: auto;
     text-align: center;
-    width: 98%;
+    width: 99%;
     font-size: 13pt;
 }
 
@@ -76,7 +76,7 @@ p{
 
 strong{
     display: inline-block;
-    width: 111px;
+    width: 90px;
     text-align: right;
     margin-right: 20px;
 }
