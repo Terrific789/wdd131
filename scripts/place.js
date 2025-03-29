@@ -1,8 +1,6 @@
-// Get the current year dynamically
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").innerHTML = `&copy; ${currentYear} | `;
 
-// Get the last modified date of the document
 const lastModified = document.lastModified;
 document.getElementById("lastModified").innerHTML = `Last Modified: ${lastModified}`;
 
@@ -11,11 +9,10 @@ function calculateWindChill(tempC, windSpeedKmh) {
 }
 
 function updateWindChill() {
-    const temp = parseFloat(document.querySelector('#temp').textContent); // Convert to number
-    const windSpeed = parseFloat(document.querySelector('#windSpeed').textContent); // Convert to number
+    const temp = parseFloat(document.querySelector('#temp').textContent); 
+    const windSpeed = parseFloat(document.querySelector('#windSpeed').textContent); 
     let windChillElement = document.getElementById("windChill");
 
-    // Check if conditions are met for wind chill calculation
     if (temp <= 10 && windSpeed > 4.8) {
         windChillElement.textContent = `${calculateWindChill(temp, windSpeed)} °C`;
     } else {
