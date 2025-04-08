@@ -50,17 +50,3 @@ document.querySelectorAll('#mobile a').forEach(link => {
         bar.style.display = "block";
     });
 });
-
-
-
-// function showNavbar() {
-//     const sidebar = document.querySelector('#mobile');
-//     sidebar.style.display ="block";
-// }
-
-// function hideNavbar() {
-//     const hidebar = document.querySelector('#mobile');
-//     hidebar.style.display ="none";
-//     bar.style.display ="none";
-
-// }

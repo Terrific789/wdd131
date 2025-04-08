@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="keywords" content="Picture Album, Web Development, HTML, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Izunna Egba">
+    <title>Picture Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles\filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+    <script src="scripts\filtered-temples.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav id="mobile">
+            <ul>
+                <li onclick="hideNavbar()" id="menu-Bar"><img src="images/multiply.png" alt=""></li>
+                <li class="nav-item" data-filter="old">Old Temples</li>
+                <li class="nav-item" data-filter="new">New Temples</li>
+                <li class="nav-item" data-filter="large">Large Temples</li>
+                <li class="nav-item" data-filter="small">Small Temples</li>
+                <li class="nav-item" data-filter="home">All Temples</li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li class="nav-item" data-filter="old">Old Temples</li>
+                <li class="nav-item" data-filter="new">New Temples</li>
+                <li class="nav-item" data-filter="large">Large Temples</li>
+                <li class="nav-item" data-filter="small">Small Temples</li>
+                <li class="nav-item" data-filter="home">All Temples</li>
+            </ul>
+            <div id="hamburger"><img src="images/bar.png" alt="Menu"></div>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2>Temple Images</h2>
+
+        <div id="temple-container">
+            <!-- Images will be dynamically inserted here by JavaScript -->
+        </div>
+
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span>Izunna Egba | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
