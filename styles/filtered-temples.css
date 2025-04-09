@@ -72,35 +72,48 @@ nav ul {
     height: auto;
 }
 
-nav ul li, .temple-card {
+nav ul li,
+.temple-card {
     transition: all 0.3s ease-in-out;
 }
 
 
-nav ul li, a{
-    color: #000;
+nav ul li {
     cursor: pointer;
     text-align: center;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 13pt;
-    height: 50px;
-    width: auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    /* padding: 5px; */
+    padding-top: 5px;
+    height: 40px;
+    width: 130px;
 }
 
-nav li:hover {
+nav ul li a{
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 12pt;
+    height: 40px;
+    width: 100%;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    display: block; /* or flex if you want to align center */
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+}
+
+nav ul li a:hover {
     background-color: #f0c16a;
     color: #fff;
     font-weight: bold;
-    transform: scale(1.05);
+    border-radius: 20px 0px 20px 20px;
+    margin: 0px 5px 0px 5px;
+    transform: scale(1.1);
+    padding: 5px;
 }
 
 nav img {
     height: 45px;
     width: 55px;
-    /* mix-blend-mode: color-burn; */
     border-radius: 20px;
 
 }
@@ -135,9 +148,9 @@ nav img {
     padding: 0;
 }
 
-#mobile ul li:not(:first-child){
+#mobile ul li:not(:first-child) {
     display: block;
-    padding: 15px;
+    /* padding: 15px; */
     font-size: 18px;
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -146,29 +159,34 @@ nav img {
     text-align: left;
     background-color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
+    height: 60px;
+
 }
 
-#mobile a{
+#mobile a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: block;
 }
 
 
-#mobile ul li:not(:first-child):hover{
+#mobile ul li a:hover {
     background-color: #f0c16a;
-  }
+}
 
-#mobile ul li:hover{
+#mobile ul li:hover {
     background-color: transparent;
+    transform: scale(1.05);
+    margin: 10px;
 }
 
 #mobile ul li:first-child {
-    /* border-bottom: none; */
-    /* mix-blend-mode: color-burn; */
-    /* background-color: rgba(132, 124, 124, 0.6); */
     width: 60px;
     height: 80px;
 }
