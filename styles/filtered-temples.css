@@ -150,11 +150,9 @@ nav img {
 
 #mobile ul li:not(:first-child) {
     display: block;
-    /* padding: 15px; */
     font-size: 18px;
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-width: 70%;
     width: 90%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.6);
