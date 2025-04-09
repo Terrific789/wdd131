@@ -209,7 +209,7 @@ function filterTemples(criteria) {
             filtered = temples;
             break;
         case "old":
-            filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 2000);
+            filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
             break;
         case "new":
             filtered = temples.filter(t => new Date(t.dedicated).getFullYear() >= 2000);
@@ -227,9 +227,17 @@ function filterTemples(criteria) {
 }
 
 // Event listeners for nav items
-document.querySelectorAll(".nav-item").forEach(btn => {
-    btn.addEventListener("click", () => {
-        const filterType = btn.getAttribute("data-filter");
-        filterTemples(filterType);
+// document.querySelectorAll(".nav-item").forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         const filterType = btn.getAttribute("data-filter");
+//         filterTemples(filterType);
+//     });
+// });
+
+document.querySelectorAll(".nav-item a").forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const filterType = link.parentElement.getAttribute("data-filter");
+        filterTemples(filterType === "home" ? "all" : filterType);
     });
 });
