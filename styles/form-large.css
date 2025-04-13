@@ -1,0 +1,38 @@
+@media (min-width: 740px) {
+    main{
+        font-family: 'Roboto', sans-serif;
+        height: auto;
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    form{
+        width: 45%;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0px;
+        overflow-y: scroll;
+        height: 100vh;
+        padding: 30px;
+    }
+
+    img{
+        width: 55%;
+        height: 100vh;
+        display: block;
+    }
+
+    footer {
+        clear: both;
+        content: "";
+        position: relative;
+        bottom: 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        background-color: #c2bfbf;
+    }
+}

@@ -1,0 +1,241 @@
+:root{
+    --background-color: #e3e2e2;
+    --text-color: #333333;
+    --label-color: #555555;
+    --border-color: #cccccc;
+    --font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    background-color: #1d4e1d;
+    color: #fff;
+    font-size: 15pt;
+    font-family: var(--font-family);
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+}
+
+#product{
+    width: 98%;
+    height: 40px;
+    /* margin: 0px auto; */
+    padding: 10px;
+}
+
+#product > label{
+    font-size: 12pt;
+    display: block;
+    margin: 10px 0px;
+}
+
+select{
+    height: 40px;
+    width: 100%;
+}
+
+option{
+    width: 100%;
+    font-size: 12pt;
+    position: relative;
+    z-index: 2px;
+}
+
+main{
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin: 40px auto;
+    width: 95%;
+    padding: 15px;
+
+}
+
+img{
+    display: none;
+}
+
+
+label{
+    color: var(--label-color);
+    font-size: 11pt;
+    margin: 5px;
+}
+
+#rating{
+    display: block;
+    margin-top: 50px;
+}
+
+#rating > label{
+    margin: 0px;
+    display: block;
+    text-align: left;
+    padding-left: 5px;
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+    width: 400px;
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: grey;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+#dates{
+    margin-top:30px;
+    width: 100%;
+}
+
+#dates > label{
+    font-size: 12pt;
+    display: block;
+}
+
+input[type="date"]{
+    width: 98%;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    font-size: 12pt;
+    padding: 5px;
+}
+
+#useful{
+    margin-top: 30px;
+}
+
+#useful > label{
+    font-size: 13pt;
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#review{
+    margin-top: 30px;
+}
+
+#review > label{
+    display: block;
+    font-size: 13pt;
+}
+
+cite{
+    color: rgb(78, 78, 222);
+    font-style: oblique;
+}
+
+textarea{
+    color: var(--text-color);
+    padding: 10px;
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    font-size: 13pt;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+#username{
+    margin-top: 30px;
+}
+
+#username > label{
+    font-size: 13pt;
+    display: block;
+}
+
+input[type="text"]{
+    width: 98%;
+    height: 35px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 13pt;
+}
+
+#submit{
+    margin: 40px auto 10px auto;
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    font-size: 12pt;
+    border-style: none;
+    background-color: coral;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 12pt;
+    background-color: #c2bfbf;
+}
+
+footer p {
+    margin: 5px 0;
+    height: 30px;
+}

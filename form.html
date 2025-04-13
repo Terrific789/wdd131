@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="description" keywords="Dynamic web fundamentals - 131">
+    <meta content="author" keywords="Izunna Egba">
+    <title>Product-form review</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Product review</h1>
+    </header>
+    <main>
+        <img src="images\man.png" alt="review.jpeg">
+        <form action="review.html" method="get">
+            <label for="product">Product Name</label>
+            <select name="product" id="product">
+                <option value="select" disabled selected>Select a country...</option>
+            </select>
+
+            <div id="rating">
+                <label for="">Overall Rating</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </div>
+
+            <div id="dates">
+                <label for="date">Date of Installation</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div id="useful">
+                <label for="useful">Was this product useful?</label>
+                <label for="durability"><input type="checkbox" value="durability" name="durability"
+                        id="durability">Durability</label>
+                <label for="performance"><input type="checkbox" value="performance" name="performance"
+                        id="performance">Performance</label>
+                <label for="design"><input type="checkbox" value="design" name="design" id="design">Design</label>
+                <label for="simple"><input type="checkbox" value="simple" name="simple" id="simple">Ease of use</label>
+                <label for="accuracy"><input type="checkbox" value="accuracy" name="accuracy"
+                        id="accuracy">Accuracy</label>
+            </div>
+
+            <div id="review">
+                <label for="review">Written review <cite>(optional)</cite></label>
+                <textarea name="textarea" id="textarea"></textarea>
+            </div>
+
+            <div id="username">
+                <label for="name">Username <cite>(optional)</cite></label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div id="submit">
+                <input type="submit" value="Submit review">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span>Izunna Egba | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
