@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="description" keywords="Dynamic web fundamentals - 131">
-    <meta content="author" keywords="Izunna Egba">
+    <meta name="description" content="Dynamic web fundamentals - WDD131">
+    <meta name="author" content="Izunna Egba">
+    <meta name="keywords" content="Products, Review, Form, HTML, CSS, JS">
+
     <title>Product-form review</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +25,7 @@
         <h1>Product review</h1>
     </header>
     <main>
-        <img src="images\man.png" alt="review.jpeg">
+        <img src="images/man.png" alt="review.jpeg">
         <form action="review.html" method="get">
             <label for="product">Product Name</label>
             <select name="product" id="product">
@@ -31,7 +33,7 @@
             </select>
 
             <div id="rating">
-                <label for="">Overall Rating</label>
+                <label>Overall Rating</label>
                 <div class="stars">
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                     <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -47,19 +49,25 @@
             </div>
 
             <div id="useful">
-                <label for="useful">Was this product useful?</label>
+                <label>Was this product useful?</label>
                 <label for="durability"><input type="checkbox" value="durability" name="durability"
                         id="durability">Durability</label>
+
                 <label for="performance"><input type="checkbox" value="performance" name="performance"
                         id="performance">Performance</label>
-                <label for="design"><input type="checkbox" value="design" name="design" id="design">Design</label>
-                <label for="simple"><input type="checkbox" value="simple" name="simple" id="simple">Ease of use</label>
+
+                <label for="design"><input type="checkbox" value="design" name="design" 
+                        id="design">Design</label>
+
+                <label for="simple"><input type="checkbox" value="simple" name="simple" 
+                        id="simple">Ease of use</label>
+
                 <label for="accuracy"><input type="checkbox" value="accuracy" name="accuracy"
                         id="accuracy">Accuracy</label>
             </div>
 
             <div id="review">
-                <label for="review">Written review <cite>(optional)</cite></label>
+                <label>Written review <cite>(optional)</cite></label>
                 <textarea name="textarea" id="textarea"></textarea>
             </div>
 
