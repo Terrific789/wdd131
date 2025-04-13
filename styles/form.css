@@ -50,7 +50,7 @@ option{
     width: 100%;
     font-size: 12pt;
     position: relative;
-    z-index: 2px;
+    z-index: 2;
 }
 
 main{
