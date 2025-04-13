@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/review.css">
+  <!-- <script src="scripts\form.js"></script> -->
+</head>
+<body>
+  <main>
+    <h1>Thank You for Your Review!</h1>
+    <p>You have submitted <span id="reviewCount">0</span> review(s).</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Naija Product Reviews. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Update review count using localStorage
+    let count = localStorage.getItem("reviewCount") || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("reviewCount").textContent = count;
+  </script>
+</body>
+</html>

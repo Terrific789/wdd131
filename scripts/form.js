@@ -46,34 +46,19 @@ function populateProductOptions() {
   });
 }
 
-// Function to update review count using localStorage
-function updateReviewCount() {
-  let reviewCount = localStorage.getItem("reviewCount");
-
-  if (!reviewCount) {
-    reviewCount = 0;
-  }
-
-  // Increase by 1
-  reviewCount = parseInt(reviewCount) + 1;
-
-  // Save back to localStorage
-  localStorage.setItem("reviewCount", reviewCount);
-
-  // Display the count on the page
-  const countDisplay = document.getElementById("reviewCount");
-  countDisplay.textContent = `You don submit ${reviewCount} review(s).`;
-}
 
 // Run when page load
 document.addEventListener("DOMContentLoaded", () => {
   populateProductOptions();
-  updateReviewCount();
+})
+  
+//   document.getElementById("reviewForm").addEventListener("submit", (e) => {
+//     e.preventDefault(); 
+//     alert("Thanks for your review! 🎉");
+//   });
+// });
 
-  // Optional: Handle form submission
-  document.getElementById("reviewForm").addEventListener("submit", (e) => {
-    e.preventDefault(); // Prevent default form action (if you no dey use backend yet)
-    alert("Thanks for your review! 🎉");
-    // You fit redirect or do other things here too
-  });
-});
+const load = document.querySelector('#submit');
+load.addEventListener('click', function() {
+  window.location = 'review.html';
+})
