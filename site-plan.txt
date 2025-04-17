@@ -1,0 +1,43 @@
+Naija Recipes Gallery – Site Planning Document
+Site Name: Naija Recipes Gallery
+This name represents a colorful, diverse collection of traditional Nigerian recipes from different cultures like Yoruba, Igbo, Hausa, and others. I chose this name because it captures the heart of the site — a visual and interactive experience for lovers of Nigerian food.
+
+Site Purpose:
+    The purpose of the Naija Recipes Gallery is to showcase and preserve traditional Nigerian recipes in a modern, accessible format. Visitors will be able to explore various dishes, view ingredients, learn how to prepare meals, and even filter recipes based on culture, preparation method, or popularity. The site also aims to connect younger generations with their roots and encourage culinary exploration.
+    Scenarios:
+    "I want to learn how to make Ofada rice and sauce. Can I find the ingredients and steps here?"
+    "I’m planning a traditional wedding — which popular Yoruba and Igbo dishes should I serve?"
+    "I’m on a budget. Which Nigerian meals are quick and cheap to prepare?"
+    "Are there vegetarian or healthy options in Nigerian cuisine I can try?"
+
+Color Schema:
+    Primary Color: Deep Green (#006400) – Used for headers, buttons, and navigation to reflect freshness and natural ingredients.
+    Accent Color: Golden Yellow (#FFD700) – Used for highlights, icons, and accent backgrounds to represent palm oil, plantains, and richness of flavor.
+    Background: Light Beige (#FFF8DC) – Soft background to keep the content readable and warm.
+
+Typography:
+    Heading Font: 'Poppins', sans-serif – Clean, modern, and bold, great for section headings and page titles.
+    Body Font: 'Open Sans', sans-serif – Simple and very readable, perfect for instructions, descriptions, and recipes.
+    Special Accent Font: 'Pacifico', cursive – May be used sparingly in logo or major recipe titles to give a “handwritten recipe” vibe.
+
+Wireframes (Description):
+    Mobile View (Portrait):
+        Top Navigation Bar with Logo and Menu Icon
+        Hero Section: Big featured recipe with image and title
+        Recipe Filters (e.g., Category, Region, Time)
+        Scrollable Gallery of Recipes (image + title + short description)
+        Footer with links to Reference Page and Contact
+
+    Desktop View (Landscape):
+        Horizontal Navigation Bar (Logo, Home, Recipes, About, Contact)
+        Hero Image with Overlay Text
+        Recipe Gallery in Grid Layout (3 or 4 columns)
+        Sidebar Filters
+        Footer with additional info, references, and social media icons
+
+Extra Notes:
+    All images used will be optimized and lazy-loaded to improve performance.
+    The recipe data will be stored in an array of objects and dynamically displayed with JavaScript.
+    Visitors will be able to like/save favorite recipes using localStorage.
+    JavaScript will handle filters, search, and dynamic DOM updates.
+
