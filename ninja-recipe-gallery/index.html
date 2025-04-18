@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Recipe Gallery</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Verdana+Sans&family=Segoedisplay=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/ninja-recipe.css">
+    <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ninja Recipes</h1>
+        <nav>
+            <a href="" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Recipe Gallery</h2>
+            <div id="search">
+                <input type="search" name="search" id="search" placeholder="Search recipes....">
+            </div>
+
+            <div id="filtered-nav">
+                <button class="filter" data-category="all">All</button>
+                <button class="filter" data-category="popular">Popular</button>
+                <button class="filter" data-category="asian">Asian</button>
+                <button class="filter" data-category="african">African</button>
+                <button class="filter" data-category="american">American</button>
+                <button class="filter" data-category="other">Others..</button>
+            </div>
+        </section>
+
+        <section class="recipeContainers popular">
+            <span class="albumTitle">Popular Recipes</span>
+            <div class="popularRecipe" id="album1"></div>
+        </section>
+
+        <section class="recipeContainers asian">
+            <span class="albumTitle">Asian Recipes</span>
+            <div class="asianRecipe" id="album2"></div>
+        </section>
+
+        <section class="recipeContainers african hidden" id="africanSection">
+            <span class="albumTitle">African Recipes</span>
+            <div class="africanRecipe" id="album3"></div>
+        </section>
+
+        <section class="recipeContainers american hidden" id="americanSection">
+            <span class="albumTitle">American Recipes</span>
+            <div class="americanRecipe" id="album4"></div>
+        </section>
+
+        <div id="load-more-container">
+            <button id="load-more-btn">Load More...</button>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="information">
+            <div id="About">
+                <p><strong>About Ninja Recipes</strong></p>
+                <a href="">Discover amazing recipes around the world, shared by our community of food lovers</a>
+            </div>
+
+            <div id="quick-links">
+                <p><strong>Quick Links</strong></p>
+                <a href="">Popular recipes</a>
+                <a href="">Latest recipes</a>
+                <a href="">Submit recipe</a>
+                <a href="">Privacy Policy</a>
+            </div>
+
+            <div id="newsletter">
+                <p><strong>Newsletter</strong></p>
+                <form action="">
+                    <p>Subscribe to our newsletter for the latest recipes and updates.</p>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address...">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div id="due-date">
+            <p><span id="currentyear"></span>Izunna Egba | Nigeria</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
