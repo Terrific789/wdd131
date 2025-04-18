@@ -347,9 +347,8 @@ const recipeSections = document.querySelectorAll('.recipeContainers');
 popularPic.forEach((pic) => {
     const recipeCard = document.createElement("div");
     recipeCard.classList.add("recipe-card");
-
     recipeCard.innerHTML = `
-        <img src="${pic.src}" alt="${pic.alt}">
+        <img src="${pic.src}" alt="${pic.alt}" loading="lazy">
         <div id="recipe-content">
             <h4>${pic.category}</h4>
             <h3>${pic.title}</h3>
@@ -368,7 +367,7 @@ AsianPic.forEach((pic) => {
     const recipeCard = document.createElement("div");
     recipeCard.classList.add("recipe-card");
     recipeCard.innerHTML = `
-        <img src="${pic.src}" alt="${pic.alt}">
+        <img src="${pic.src}" alt="${pic.alt}" loading="lazy">
         <div id="recipe-content">
             <h4>${pic.category}</h4>
             <h3>${pic.title}</h3>
@@ -386,7 +385,7 @@ AfricanPic.forEach((pic) => {
     const recipeCard = document.createElement("div");
     recipeCard.classList.add("recipe-card");
     recipeCard.innerHTML = `
-        <img src="${pic.src}" alt="${pic.alt}">
+        <img src="${pic.src}" alt="${pic.alt}" loading="lazy">
         <div id="recipe-content">
             <h4>${pic.category}</h4>
             <h3>${pic.title}</h3>
@@ -404,7 +403,7 @@ AmericanPic.forEach((pic) => {
     const recipeCard = document.createElement("div");
     recipeCard.classList.add("recipe-card");
     recipeCard.innerHTML = `
-        <img src="${pic.src}" alt="${pic.alt}">
+        <img src="${pic.src}" alt="${pic.alt}" loading="lazy">
         <div id="recipe-content">
             <h4>${pic.category}</h4>
             <h3>${pic.title}</h3>
