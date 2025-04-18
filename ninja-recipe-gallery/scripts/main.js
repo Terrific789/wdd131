@@ -6,6 +6,55 @@ document.getElementById("currentyear").innerHTML = `&copy; ${currentYear} | `;
 const lastModified = document.lastModified;
 document.getElementById("lastModified").innerHTML = `Last Modified: ${lastModified}`;
 
+const bar = document.querySelector("#showMenu");
+const multiply = document.querySelector("#hideMenu");
+const sidebar = document.querySelector("#mobile-nav");
+const header = document.querySelector("header");
+let h1 = document.querySelector("h1");
+
+if (window.innerWidth > 740) {
+    sidebar.style.display = "none";
+    multiply.style.display = "none";
+    bar.style.display = "none";
+} else {
+    sidebar.style.display = "none";
+    multiply.style.display = "none";
+    bar.style.display = "block";
+}
+
+bar.addEventListener('click', () => {
+    sidebar.style.display = "block";
+    multiply.style.display = "block";
+    bar.style.display = "none";
+    header.style.flexDirection = "column";
+});
+
+multiply.addEventListener('click', () => {
+    sidebar.style.display = "none";
+    multiply.style.display = "none";
+    bar.style.display = "block";
+    header.style.flexDirection = "row";
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 740) {
+        sidebar.style.display = "none";
+        multiply.style.display = "none";
+        bar.style.display = "none";
+    } else {
+        bar.style.display = "block";
+    }
+});
+
+document.querySelectorAll('#mobile-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        sidebar.style.display = "none";
+        multiply.style.display = "none";
+        bar.style.display = "block";
+    });
+});
+
+
 let popularPic = [
     {
         src: "https://www.allrecipes.com/thmb/IlJDn7HtkdNYprJI4fNxtBsO_m4=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3792006-spicy-sushi-roll-Christina-4x3-1-cc687c743fff4bf3944023aa77cf4115.jpg",

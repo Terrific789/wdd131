@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Got questions, recipe ideas, or feedback? Reach out to the Naija Recipe Gallery team. We'd love to hear from you and grow this tasty community together!">
+    <meta name="keywords" content="Contact, Naija Recipes, Italian Cuisine, Recipe Gallery, Feedback, Questions">
+    <meta name="author" content="Izunna Egba">
+    <meta name="robots" content="index, follow">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Verdana+Sans&family=Segoedisplay=swap" rel="stylesheet">
     <title>Contact Us - Naija Recipes Gallery</title>
     <link rel="stylesheet" href="styles/contact.css">
     <script src="scripts/contact.js" defer></script>
@@ -12,11 +18,20 @@
 
     <header>
     <h1>Ninja Recipes</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="" class="active">Contact</a>
-        </nav>
+    <nav>
+        <a class="hideOnMobile" href="">Home</a>
+        <a class="hideOnMobile" href="about.html">About</a>
+        <a class="hideOnMobile" href="contact.html" class="active">Contact</a>
+        <span id="showMenu"><img src="../images/hamburger.png" alt=""></span>
+        
+    </nav>
+
+    <nav id="mobile-nav">
+        <span id="hideMenu"><img src="../images/close.jpeg" alt=""></span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href=""  class="active">Contact</a>
+    </nav>
     </header>
 
     <!-- Main Content -->
