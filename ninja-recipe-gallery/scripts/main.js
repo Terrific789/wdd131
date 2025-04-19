@@ -13,11 +13,11 @@ const header = document.querySelector("header");
 let h1 = document.querySelector("h1");
 
 if (window.innerWidth > 740) {
-    sidebar.style.display = "none";
+    // sidebar.style.display = "none";
     multiply.style.display = "none";
     bar.style.display = "none";
 } else {
-    sidebar.style.display = "none";
+    // sidebar.style.display = "none";
     multiply.style.display = "none";
     bar.style.display = "block";
 }

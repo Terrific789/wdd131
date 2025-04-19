@@ -52,32 +52,9 @@ h4{
 }
 
 header{
-    /* background-color:var(--lightEffect-color); */
     padding:1rem;
-    /* text-align:center; */
     display: flex;
     justify-content: space-between;
-}
-
-#showMenu{
-    display: none;
-}
-
-nav img{
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-    mix-blend-mode: multiply;
-}
-
-#mobile-nav{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    margin: 10px auto;
-    padding: 10px;
 }
 
 nav{
@@ -107,14 +84,37 @@ nav a.active{
     color: var(--strong-color);
 }
 
-span{
-    display: block;
-    width: 100%;
-    font-size: 2.5rem;
-    font-family: var(--heading-text);
-    margin: 30px auto;
-    font-weight: 700;
+nav img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    mix-blend-mode: multiply;
 }
+
+#mobile-nav{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+#showMenu{
+    display: none;
+    width: 100%;
+    height: 60px;
+    mix-blend-mode: multiply;
+    color: var(--background-color);
+    font-size: 1.5rem;
+    font-family: var(--highlight-text);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;
+}
+
 /* Main content area */
 main {
     padding: 3rem 1rem;
@@ -209,9 +209,7 @@ footer {
         width: 100%;
         margin: 0;
     }
-    
     #mobile-nav{
-        /* display: flex; */
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
@@ -219,6 +217,22 @@ footer {
         width: 100%;
         margin: 10px auto;
     }
+
+    /* #mobile-nav {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 350px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter: blur(50px);
+        padding: 20px;
+    } */
+
     #hideMenu{
         display: block;
         width: 100%;
@@ -244,17 +258,17 @@ footer {
         margin: 10px;
         transition: background-color 0.3s ease;
     }
-    
+
     #showMenu{
         display: block;
     }
     .hideOnMobile{
         display: none;
     }
-    
+
     main{
-        padding: 1rem 0.5rem;
-        width: 90%;
+        width: 95%;
+        padding: 5px;
         margin: auto;
     }
     .about-container{

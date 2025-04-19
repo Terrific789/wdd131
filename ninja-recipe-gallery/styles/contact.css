@@ -86,6 +86,24 @@ nav a.active{
     color: var(--strong-color);
 }
 
+nav img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    mix-blend-mode: multiply;
+}
+
+#mobile-nav{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
 /* Main content area */
 main {
     padding: 3rem 1rem;
@@ -163,4 +181,88 @@ footer {
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
+}
+
+@media screen and (max-width:740px){
+    header{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        width: 50%;
+    }
+    nav{
+        width: 15%;
+        margin: 0;
+    }
+    nav a{
+        width: 100%;
+        margin: 0;
+    }
+    #mobile-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    /* #mobile-nav {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 350px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter: blur(50px);
+        padding: 20px;
+    } */
+
+    #hideMenu{
+        display: block;
+        width: 100%;
+        height: 60px;
+        mix-blend-mode: multiply;
+        color: var(--background-color);
+        font-size: 1.5rem;
+        font-family: var(--highlight-text);
+        border-radius: 10px;
+        text-align: center;
+        margin: 10px auto;
+    }
+    #mobile-nav a{
+        color: var(--strong-color);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        display: block;
+        margin: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    #showMenu{
+        display: block;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+
+    main{
+        width: 95%;
+        padding: 5px;
+        margin: auto;
+    }
 }
